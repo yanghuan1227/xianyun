@@ -53,7 +53,7 @@ export default {
             method: "POST", // method没有s
             data: this.form
           }).then(res => {
-            console.log(res);
+            this.$store.commit('user/setUserInfo',res.data)
           });
         } else {
           console.log("验证失败");

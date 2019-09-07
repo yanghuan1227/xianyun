@@ -2,12 +2,12 @@
 // mutations 同步修改state的数据
 
 // 用户管理
-export const state = {
+export const state = () => ({
   userInfo: {
     token: "",
     user: {}
   }
-}
+})
 
 export const mutations = {
   // 设置用户信息,mutations下的方法第一个参数固定是state

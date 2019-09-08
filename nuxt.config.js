@@ -27,8 +27,7 @@ export default {
         rel: 'stylesheet',
         type: 'text/css',
         href: '//at.alicdn.com/t/font_1168872_ehvuah8v57g.css'
-      } // 新增全局字体样式
-
+      }
     ]
   },
   /*
@@ -42,7 +41,7 @@ export default {
    */
   css: [
     'element-ui/lib/theme-chalk/index.css',
-    'assets/main.css' // 新增自定义的页面过渡样式（文件来自3.4.1）
+    'assets/main.css'
   ],
   /*
    ** Plugins to load before mounting the App
@@ -51,9 +50,9 @@ export default {
     '@/plugins/element-ui',
     // axios的拦截插件
     '@/plugins/axios',
-    // 本地存储的插件
+    //  本地存储的插件
     {
-      src: '@/plugins/localStorage',
+      src: '@/plugins/localStorage.js',
       ssr: false
     }
   ],
@@ -73,7 +72,7 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: "http://127.0.0.1:1337" // 新增axios默认请求路径 		
+    baseURL: "http://127.0.0.1:1337" // 新增axios默认请求路径
   },
   /*
    ** Build configuration
